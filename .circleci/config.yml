@@ -2,17 +2,13 @@ version: 2.1
 
 jobs:
   build:
+    resource_class: small
     docker:
-      - image: cimg/base:stable
+    - image: ubuntu:22.04
     steps:
-      - checkout
-      - run:
-          name: Install dependencies
-          command: sudo apt-get update && sudo apt-get install -y build-essential cmake
-      - run:
-          name: Build project
-          command: |
-            mkdir -p build
-            cd build
-            cmake ..
-            make
+    - checkout
+    - run: apt update
+    - run: DEBIAN_FRONTEND=noninteractive TZ=Europe/Brussels apt install -y gcc g++ libsfml-dev cmake git
+    - run: mkdir -p build
+    - run: cd build && cmake ..
+    - run: cd build && make
