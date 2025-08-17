@@ -1,0 +1,58 @@
+{
+  "type": "player",
+  "jump": {
+      "file": "player_jump.png",
+      "frameDurations": [50, 120, 120, 1000000],
+      "LDisplayXOffset": 1,
+      "RDisplayXOffset": -8,
+      "displayYOffset": 0,
+      "startXOffset": 0,
+      "startYOffset" : 0,
+      "xOffset" : 30,
+      "yOffset" : 0,
+      "ySize": 16,
+      "repeating": false
+  },
+
+  "land": {
+    "file": "player_jump.png",
+    "frameDurations": [86, 86],
+    "LDisplayXOffset": 1,
+    "RDisplayXOffset": -8,
+    "displayYOffset": 0,
+    "startXOffset": 120,
+    "startYOffset" : 0,
+    "xOffset" : 30,
+    "yOffset" : 0,
+    "ySize": 16,
+    "repeating": false
+  },
+
+  "fall": {
+    "file": "player_jump.png",
+    "frameDurations": [1000000],
+    "LDisplayXOffset": 1,
+    "RDisplayXOffset": -8,
+    "displayYOffset": 0,
+    "startXOffset": 90,
+    "startYOffset" : 0,
+    "xOffset" : 30,
+    "yOffset" : 0,
+    "ySize": 16,
+    "repeating": false
+  },
+
+  "walk": {
+    "file": "player_walk.png",
+    "frameDurations": [60, 60, 60, 60, 60, 60, 60, 60],
+    "LDisplayXOffset": 1,
+     "RDisplayXOffset": -5,
+    "displayYOffset": -9,
+    "startXOffset": 0,
+    "startYOffset" : 0,
+    "xOffset" : 29,
+    "yOffset" : 0,
+    "ySize": 25,
+    "repeating": true
+  }
+}

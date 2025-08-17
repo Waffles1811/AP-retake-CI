@@ -1,0 +1,16 @@
+{
+  "type": "tempPlatform",
+  "disappear": {
+    "file": "tempPlatformDisappear.png",
+    "frameDurations": [125, 125, 125, 125],
+    "LDisplayXOffset": 0,
+    "RDisplayXOffset": 0,
+    "displayYOffset": 0,
+    "startXOffset": 0,
+    "startYOffset" : 0,
+    "xOffset" : 16,
+    "yOffset" : 0,
+    "ySize": 5,
+    "repeating": false
+  }
+}
